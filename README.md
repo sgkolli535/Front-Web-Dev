@@ -1,2 +1,2 @@
 # Front-Web-Dev
-Front-End Web-Dev
+Has projects in HTML/CSS/Javascript
