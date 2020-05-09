@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sneaker Form | Sumedha Kolli</title>
+	<style>
+		body {
+			background-color: #76DCC1;
+		}
+		h1 {
+			text-align: center;
+		}
+		#container {
+			font-family: Copperplate;
+			font-size: 20px;
+			padding-top: 20px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			color: #6C8E87;
+			width: 900px;
+			border: 3px solid #6C8E87;
+			border-radius: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 60px;
+		}
+		.form-row {
+			margin-bottom: 20px;
+		}
+		.left-label {
+			width: 200px;
+			float: left;
+			text-align: right;
+			padding-right: 20px;
+		}
+		.textbox {
+			border: none;
+			font-size: 20px;
+			font-family: Copperplate;
+		}
+		#address {
+			width: 270px;
+			height: 100px;
+			vertical-align: top;
+			border: none;
+		}
+		button {
+			background-color: #6C8E87;
+			width: 90px;
+			height: 40px;
+			border: none;
+			font-size: 15px;
+			font-family: Copperplate;
+			color: #76DCC1;
+			vertical-align: top;
+			border-radius: 5px;
+		}
+		#buttons {
+			margin-left: 222px;
+		}
+		#sizebar {
+			width: 200px;
+			height: 30px;
+			border: none;
+			font-family: Copperplate;
+			font-size: 20px;
+			text-align: center;
+			color: #6C8E87;
+		}
+		#name {
+			width: 270px;
+		}
+		#email {
+			width: 270px;
+		}
+		.color {
+			vertical-align: top;
+		}
+		.features {
+			vertical-align: top;
+		}
+		#terms {
+			margin-left: 222px;
+		}
+		#sizes {
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>Custom Sneakers Form</h1>
+		<form action="sneakerconfirmation.html">
+			<div class="form-row">
+				<label for="name" class="left-label">Name:</label>
+				<input type="text" id="name" placeholder="John Doe" class="textbox"/>
+			</div>
+			<div class="form-row">
+				<label for="email" class="left-label">Email:</label>
+				<input type="email" id="email" placeholder="john.doe@gmail.com" class="textbox"/>
+			</div>
+			<div class="form-row">
+				<label for="address" class="left-label" id="addresslabel">Enter your Address:</label>
+				<textarea id="address" placeholder="3434 Fantasy St, Los Angeles, CA, 90087, United States" class="textbox"></textarea>
+			</div>
+			<div class="form-row">
+				<label class="left-label">Sneaker Color:</label>
+				<label>
+					<input type="radio" name="color" class="color"/> Black
+				</label>
+				<label>
+					<input type="radio" name="color" class="color"/> White
+				</label>
+				<label>
+					<input type ="radio" name="color" class="color"/> Red
+				</label>
+			</div>
+			<div class="form-row">
+			<label class="left-label">Extra Features (Default: White, None, Silver):</label>
+			<label>
+				<input type="checkbox" name="features" class="features"/> Rainbow Shoelaces
+			</label>
+			<label>
+				<input type="checkbox" name="features" class="features"/> Name Patch
+			</label>
+			<label>
+				<input type="checkbox" name="features" class="features"/> Gold Eyelets
+			</label>
+			</div>
+			<div class="form-row" id="sizes">
+				<label class="left-label" for="size">Sneaker Size:</label>
+				<select id="sizebar">
+					<option>Pick a Size</option>
+					<option>M3.5/W5</option>
+					<option>M4/W5.5</option>
+					<option>M4.5/W6</option>
+					<option>M5/W6.5</option>
+					<option>M5.5/W7</option>
+					<option>M6/W7.5</option>
+					<option>M6.5/W8</option>
+					<option>M7/W8.5</option>
+					<option>M7.5/W9</option>
+					<option>M8/W9.5</option>
+					<option>M8.5/W10</option>
+					<option>M9/W10.5</option>
+					<option>M9.5/W11</option>
+					<option>M10/W11.5</option>
+					<option>M10.5/W12</option>
+					<option>M11/W12.5</option>
+					<option>M11.5/W13</option>
+					<option>M12/W13.5</option>
+					<option>M12.5/W14</option>
+					<option>M13/W14.5</option>
+				</select>
+			</div>
+			<div class="form-row">
+				<label>
+					<input type="checkbox" name="terms" id="terms"/> I accept the terms and conditions to purchase this product.
+				</label>
+			</div>
+			<div class="form-row" id="buttons">
+				<button type="submit">Submit</button>
+				<button type="reset">Reset All Choices</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

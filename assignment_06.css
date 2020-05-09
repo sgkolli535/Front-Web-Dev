@@ -1,0 +1,53 @@
+		@font-face {
+			font-family: "Betty";
+			src: url(Betty.ttf);
+		}
+		#body {
+			background-color: skyblue;
+		}
+		#container {
+			width: 1100px;
+			margin: auto;
+			margin-top: 0;
+			background-color: lavender;
+		}
+		#header {
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-align: center;
+			margin: auto;
+			color: white;
+			font-family: "Betty", Gill Sans, sans-serif;
+			font-size: 25px;
+		}
+		#navbar {
+			background-color: #93c572;
+			text-align: center;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		#navbar a {
+			text-decoration: none;
+			padding-right: 20px;
+			padding-left: 20px;
+			font-size: 20px;
+			color: #6666CC;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			font-family: "Acme", Gill Sans, sans-serif;
+		}
+		#navbar a:hover {
+			color: lavender;
+		}
+		#footer {
+			background-color: #93c572;
+			text-align: center;
+			color: white;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			font-family: "Acme", Gill Sans, sans-serif;
+		}
+		html, body {
+		margin: 0;
+		padding: 0;
+		}

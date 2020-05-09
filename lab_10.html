@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<title>Lab 10 - CSS Effects | Sumedha Kolli</title>
+	<style>
+		body {
+			background-color: black;
+		}
+		h1 {
+			color: white;
+			font-family: "Anton", Arial, sans-serif;
+			font-size: 50px;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+		#totalcontainer {
+			padding-top: 70px;
+			padding-left: 20px;
+			transform: translate(0px, 0px) scale(1);
+			transition: all 5s 0s;
+		}
+		#cap {
+			position: relative;
+			border: 2px solid white;
+			width: 357px;
+		}
+		#thor {
+			position: absolute;
+			left: 25px;
+			bottom: 7px;
+			border: 2px solid white;
+			width: 360px;
+		}
+		#iron {
+			position: absolute;
+			left: 30px;
+			bottom: 7px;
+			border: 2px solid white;
+			width: 360px;
+		}
+		#totalcontainer:hover #cap {
+			transform: translate(50px);
+			transition: all 5s 0s;
+		}
+		#totalcontainer:hover #thor {
+			transform: translate(400px) scale(1.25);
+			transition: all 5s 0s;
+		}
+		#totalcontainer:hover #iron {
+			transform: translate(820px) scale(1.5);
+			transition: all 5s 0s;
+		}
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>The Avengers</h1>
+	<div id="totalcontainer">
+		<div id="cap">
+			<img src="capamerica.jpeg" alt="Captain America"/>
+		</div>
+		<div id="thor">
+			<img src="thor.jpeg" alt="Thor"/>
+		</div>
+		<div id="iron">
+			<img src="ironman.jpeg" alt="Iron Man"/>
+		</div>
+	</div>
+</body>
+</html>

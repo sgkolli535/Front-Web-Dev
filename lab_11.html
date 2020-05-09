@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Puzzle | Sumedha Kolli</title>
+</head>
+<style>
+	h1 {
+		font-family: Impact, sans-serif;
+		color: orange;
+		text-align: center;
+		font-size: 50px;
+	}
+	#container {
+		width: 1350px;
+		margin-left: 128px;
+		margin-right: auto;
+	}
+	.row {
+		float: left;
+	}
+	.row img {
+		float: left;
+	}
+	#move1 {
+		position: relative;
+		bottom: 10px;
+		left: 15px;
+		box-shadow: 5px 5px 5px 5px yellow;
+	}
+	#move2 {
+		position: relative;
+		bottom: 10px;
+		right: 15px;
+		box-shadow: 5px 5px 5px 5px yellow;
+	}
+	#move3 {
+		position: relative;
+		left: 20px;
+		top: 15px;
+		box-shadow: 5px 5px 5px 5px yellow;
+	}
+	#move4 {
+		position: relative;
+		left: 10px;
+		top: 7px;
+		box-shadow: 5px 5px 5px 5px yellow;
+	}
+	#move5 {
+		position: relative;
+		left: 5px;
+		top: 10px;
+		box-shadow: 5px 5px 5px 5px yellow;
+	}
+	#move6 {
+		position: relative;
+		top: 20px;
+		box-shadow: 5px 5px 5px 5px yellow;
+	}
+	#move7 {
+		position: relative;
+		top: 5px;
+		left: 5px;
+		box-shadow: 5px 5px 5px 5px yellow;
+	}
+	#move8 {
+		position: relative;
+		bottom: 20px;
+		box-shadow: 5px 5px 5px 5px yellow;
+	}
+</style>
+<body>
+	<h1>Tyler, The Creator ~ "Flower Boy"</h1>
+	<div id="container">
+		<div class="row">
+			<img src="row-1-col-1.png" alt="row1/col1" id="move7" class="draggable">
+			<img src="row-1-col-2.png" alt="row1/col2" id="move8" class="draggable">
+			<img src="row-1-col-3.png" alt="row1/col3" id="move1" class="draggable">
+		</div>
+		<div class="row">
+			<img src="row-2-col-1.png" alt="row2/col1" id="move2" class="draggable">
+			<img src="row-2-col-2.png" alt="row2/col2" class="draggable">
+			<img src="row-2-col-3.png" alt="row2/col3" id="move3" class="draggable">
+		</div>
+		<div class="row">
+			<img src="row-3-col-1.png" alt="row3/col1" id="move4" class="draggable">
+			<img src="row-3-col-2.png" alt="row3/col2" id="move6" class="draggable">
+			<img src="row-3-col-3.png" alt="row3/col3" id="move5" class="draggable">
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+
+	<script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+
+	<script>
+		var $draggable = $('.draggable').draggabilly({});
+	</script>
+</body>
+</html>
